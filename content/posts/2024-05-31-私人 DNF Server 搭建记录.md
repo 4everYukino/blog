@@ -1,8 +1,8 @@
 ---
-layout: post
 title: 私人 DNF Server 的基本概念、搭建过程、问题记录
 author: Bruce
-tag: 技术
+tags: ["技术"]
+aliases: ["/2024/05/31/私人 DNF Server 搭建记录.html"]
 ---
 
 由于 DNF 台服流出了 70 版本的 Server，故现在几乎所有私服均以其作为底板，并在此基础上通过修改 dp(dnf plugin) 插件和修改 Script.pvf 文件的方式来进行修改。
