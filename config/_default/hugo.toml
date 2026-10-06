@@ -1,0 +1,56 @@
+# 站点配置。主题的 config/_default 不会被 Hugo 自动合并，
+# 这里保留了 Blowfish 依赖的站点级设置（参考 themes/blowfish/config/_default/hugo.toml）。
+
+theme = "blowfish"
+baseURL = "https://4everyukino.github.io/blog/"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
+
+# 沿用 Jekyll 时期的文章链接：/2024/01/27/汕头泉州之旅.html
+disablePathToLower = true
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug"
+
+[uglyURLs]
+  posts = true
+
+# 日期与 slug 取自文件名：2024-01-27-汕头泉州之旅.md
+[frontmatter]
+  date = [":filename", ":default"]
+
+# 首页的 JSON 输出供站内搜索使用
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+  pagerSize = 100
+
+[imaging]
+  anchor = "Center"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+
+[related]
+  threshold = 0
+  toLower = false
+  indices = [
+    { name = "tags", weight = 100 },
+    { name = "categories", weight = 100 },
+    { name = "series", weight = 50 },
+    { name = "authors", weight = 20 },
+    { name = "date", weight = 10 },
+    { name = "fragmentrefs", type = "fragments", weight = 10, applyFilter = false },
+  ]

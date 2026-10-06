@@ -1,8 +1,8 @@
 ---
-layout: post
 title: to_upper_copy VS transform
 author: Bruce
-tag: 技术
+tags: ["技术"]
+aliases: ["/2024/04/01/to_upper_copy VS transform.html"]
 ---
 
 ## 结论

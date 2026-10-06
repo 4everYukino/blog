@@ -1,0 +1,19 @@
+# 仅覆盖与主题默认值不同的项，其余见 themes/blowfish/config/_default/params.toml
+colorScheme = "slate"
+defaultAppearance = "dark"
+autoSwitchAppearance = false # 不跟随系统亮暗，始终默认暗色
+enableCodeCopy = true
+
+[homepage]
+  layout = "landing"
+  showRecent = true
+  showRecentItems = 10
+  showMoreLink = true
+  showMoreLinkDest = "posts/" # 不能以 / 开头，否则会丢掉 baseURL 中的 /blog
+
+[article]
+  showTableOfContents = true
+  showTaxonomies = true
+
+[header]
+  layout = "fixed-fill-blur"
