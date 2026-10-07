@@ -6,6 +6,7 @@ enableCodeCopy = true
 
 [homepage]
   layout = "landing"
+  homepageImage = "img/bg.jpg" # 首页顶部头图，位于 assets/ 下
   showRecent = true
   showRecentItems = 10
   showMoreLink = true
