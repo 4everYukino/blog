@@ -5,7 +5,7 @@ autoSwitchAppearance = false # 不跟随系统亮暗，始终默认暗色
 enableCodeCopy = true
 
 [homepage]
-  layout = "landing"
+  layout = "hero"
   homepageImage = "img/bg.jpg" # 首页顶部头图，位于 assets/ 下
   showRecent = true
   showRecentItems = 10
