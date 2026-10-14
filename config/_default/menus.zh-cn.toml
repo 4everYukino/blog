@@ -8,9 +8,3 @@
   name = "标签"
   pageRef = "tags"
   weight = 20
-
-# -- Footer Menu --
-[[footer]]
-  name = "标签"
-  pageRef = "tags"
-  weight = 10
