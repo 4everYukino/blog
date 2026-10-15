@@ -1,0 +1,21 @@
+/* 主题会自动把本文件拼接在 main.css 之后。@font-face 定义见 fonts.css。 */
+
+:root {
+  /* 主题的正文字体变量叫 --font-sans，这里实际放的是衬线体：
+     英文 Source Serif 4，中文思源宋体（只覆盖中日韩字符），后面是加载完成前的备选 */
+  --font-sans: "Source Serif 4", "Noto Serif SC CJK", Georgia, "Noto Serif CJK SC",
+    "Source Han Serif SC", "Songti SC", SimSun, serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "Cascadia Code", "Noto Serif SC CJK", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* 文章列表按年分组时，年与年之间加分隔线。
+   年份标题是列表 section 的直接子元素，文章标题则嵌在链接里，不会被选中 */
+section.space-y-10 > h2:not(:first-child) {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(var(--color-neutral-200), 1);
+}
+.dark section.space-y-10 > h2:not(:first-child) {
+  border-top-color: rgba(var(--color-neutral-700), 1);
+}

@@ -1,0 +1,5 @@
+{{/* 网页字体（Source Serif 4、思源宋体、Cascadia Code），由 scripts/gen_fonts.py 生成 */}}
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+{{ with resources.Get "css/fonts.css" | resources.Minify | resources.Fingerprint $alg }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{ end }}
