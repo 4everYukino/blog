@@ -2,7 +2,7 @@
 # 这里保留了 Blowfish 依赖的站点级设置（参考 themes/blowfish/config/_default/hugo.toml）。
 
 theme = "blowfish"
-baseURL = "https://4everyukino.github.io/blog/"
+baseURL = "https://4everyukino.github.io/"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
 
@@ -10,16 +10,11 @@ enableRobotsTXT = true
 enableEmoji = true
 summaryLength = 0
 
-# 沿用 Jekyll 时期的文章链接：/2024/01/27/汕头泉州之旅.html
-disablePathToLower = true
-
+# 文章链接形如：/2024/01/27/shantou-quanzhou-trip/
 [permalinks]
-  posts = "/:year/:month/:day/:slug"
+  posts = "/:year/:month/:day/:slug/"
 
-[uglyURLs]
-  posts = true
-
-# 日期与 slug 取自文件名：2024-01-27-汕头泉州之旅.md
+# 日期与 slug 取自文件名：2024-01-27-shantou-quanzhou-trip.md
 [frontmatter]
   date = [":filename", ":default"]
 

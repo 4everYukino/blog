@@ -10,7 +10,7 @@ enableCodeCopy = true
   showRecent = true
   showRecentItems = 10
   showMoreLink = true
-  showMoreLinkDest = "posts/" # 不能以 / 开头，否则会丢掉 baseURL 中的 /blog
+  showMoreLinkDest = "posts/"
 
 [article]
   showTableOfContents = true
